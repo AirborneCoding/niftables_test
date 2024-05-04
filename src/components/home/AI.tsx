@@ -25,7 +25,7 @@ const AI = () => {
                             </div>
                             <div className="relative h-[302px] w-[33%] md:h-auto md:w-full">
                                 <Img
-                                    src="img_ai_cloud_concep_302x453.png"
+                                    src="img_ai_cloud_concep.png"
                                     width={453}
                                     height={302}
                                     alt="ai cloud image"
@@ -51,7 +51,7 @@ const AI = () => {
                             </div>
                             <div className="relative h-[302px] w-[33%] md:h-auto md:w-full">
                                 <Img
-                                    src="img_ai_cloud_concep_1.png"
+                                    src="img_ai_cloud_concep_302x453.png"
                                     width={453}
                                     height={302}
                                     alt="crypto nft image"
