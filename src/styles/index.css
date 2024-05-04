@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* tailwind */
+[type="text"],
+input:where(:not([type])),
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="week"],
+[multiple],
+textarea,
+select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+}
+
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="search"]:focus,
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+}
+
+@layer components {
+
+    /*-------------------------------------
+  Container CSS
+--------------------------------------*/
+    .container-xs {
+        @apply w-full mx-auto max-w-[1440px];
+    }
+}
+
+
+/* global styles */
+
+* {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    margin: unset;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.blue_A200_purple_A700_01_border {
+    border-image: linear-gradient(90deg, #3d8bff, #ab23ff) 1;
+}
+
+.title {
+    font-family: "Monument Extended"
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('./fonts/Satoshi-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url('./fonts/MonumentExtended-Regular.woff2') format('woff2');
+}
+
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    /* font-family: "Monument Extended"; */
+}
+
+.body-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Margins */
+@media screen and (min-width: 576px) {
+    .body-container {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .body-container {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .body-container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .body-container {
+        max-width: 1600px;
+    }
+}
+
+/* ----- */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* .text-title {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+} */
+
+@media (min-width: 1200px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    /* .text-title {
+        font-size: 4rem !important;
+    } */
+}
+
+
+@media (max-width: 1500px) {
+    .text-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 994px) {
+
+    .nav {
+        display: none;
+    }
+
+
+}
+
+
+/* Scrollbar Classes For Google Chrome */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #10283E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ab23ff;
+    border-radius: 15px;
+}
+
+
+body {
+    overflow-x: hidden;
+}
