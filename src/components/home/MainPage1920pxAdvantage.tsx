@@ -36,7 +36,6 @@ export default function MainPage1920pxAdvantage({
 }: Props) {
 
     const { title, desc, img } = props ?? {}
-    console.log(title);
 
     return (
         <div

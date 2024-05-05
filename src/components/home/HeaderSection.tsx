@@ -35,7 +35,7 @@ const HeaderSection = () => {
                         alt="header logo"
                         className="h-[39px] w-[140px] object-contain"
                     />
-                    <button onClick={openSidebar} className="text-blue-A200 ">
+                    <button onClick={openSidebar} className="text-blue-A200">
                         <FaBars size={30} />
                     </button>
                 </div>
