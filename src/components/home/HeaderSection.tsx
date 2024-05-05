@@ -20,7 +20,7 @@ const HeaderSection = () => {
                 muted
                 className="absolute top-0 left-0 w-full h-full object-cover"
             >
-                <source src="/videos/main-background-video.mp4" type="video/mp4" />
+                <source src="/main-background-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
@@ -34,6 +34,7 @@ const HeaderSection = () => {
                         height={39}
                         alt="header logo"
                         className="h-[39px] w-[140px] object-contain"
+                        
                     />
                     <button onClick={openSidebar} className="text-blue-A200">
                         <FaBars size={30} />

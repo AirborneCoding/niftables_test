@@ -56,7 +56,7 @@ export default function MainPage1920pxAdvantage({
                                         className="h-[114px] w-[20%] object-cover "
                                     />
                                     <div className="flex flex-1 items-start justify-center gap-5 sm:flex-col sm:self-stretch">
-                                        <Heading as="h5" className="w-[96%] leading-[130%] sm:w-full">
+                                        <Heading as="h5" className="w-[96%] leading-[130%] sm:w-full hover:text-blue-A200 transition-colors duration-300">
                                             {title}
                                         </Heading>
                                         <Img

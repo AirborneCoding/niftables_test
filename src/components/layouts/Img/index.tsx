@@ -28,6 +28,7 @@ const Img: React.FC<React.PropsWithChildren<ImgProps>> = ({
       className={className}
       src={isStatic ? imgSrc : BASE_URL + imgSrc}
       alt={alt}
+      priority={true}
       {...restProps}
       onError={() => {
         setImgSrc("defaultNoData.png");
